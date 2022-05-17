@@ -1,0 +1,28 @@
+.page{
+  padding-top: 50px;
+}
+
+.content1 {
+  font-size: 15px;
+  padding: 50px 50px 50px 50px;
+  border-radius: 15px;
+  background: white;
+  z-index: -1;
+  box-shadow: 0 0 10px 2px grey;
+}
+.contentCont {
+  margin: 30px 30px 30px 30px;
+}
+
+.page h1 {
+  text-align: center;
+  color: #5156be;
+  font-size: 4em;
+  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+}
+.page h3{
+  color: #5156be;
+}
+.page h2{
+  color: #5156be;
+}

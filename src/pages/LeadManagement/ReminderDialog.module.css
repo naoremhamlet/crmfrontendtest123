@@ -1,0 +1,118 @@
+.backdrop{
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,0.5);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.box{
+    background-color: white;
+    padding: 20px 30px 20px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.head svg{
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+
+.box p{
+    margin: 0;
+    display: inline;
+}
+
+.box input{
+    margin-left: 10px;
+    margin-right: 40px;
+}
+
+.box hr{
+    width: 60%;
+}
+
+.box h2{
+    margin-bottom: 5px;
+}
+
+.days{
+    padding: 20px 40px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.day{
+    border: 1px solid #5156be;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin: 0 5px;
+}
+
+.day:hover{
+    background-color: #5156be;
+    color: white;
+
+}
+
+.selectedDay{
+    background-color: #5156be;
+    color: white;
+}
+
+.footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.footer button{
+    margin-left: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.send{
+    background-color: #5156be !important;
+    color: white;
+}
+
+.send:hover{
+    color: #5156be;
+    background-color: white !important;
+    border: 2px solid #5156be;
+}
+
+.cancel{
+    border: 1px solid gray!important;
+    color: gray  !important;
+}
+
+.cancel:hover{
+color: black !important;
+border: 1px solid black !important;
+}
+
+
+@media screen and (max-width: 768px) {
+    .box{
+        width: 80vw;
+        left: 5%;
+    }
+}

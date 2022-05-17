@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact{
+    position:relative;
+    /* min-height: 75vh; */
+    padding:50px 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* background-size: cover; */
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-around;
+    margin-top: 30px;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;   
+}
+.container .contactInfo {
+    width:50%;
+    display:flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding:20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon {
+    min-width: 35px;
+    height: 35px;
+    background:#fff;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+
+}
+
+.container .contactInfo .box .text {
+    display: flex;
+    margin-left: 60px;
+    font-size:16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight:300;
+    color:black;
+}
+.container .contactInfo .box .text p{
+    color:#5156be;
+}
+.contactForm{
+    width: 40%;
+    padding:40px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    margin:15px;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top:10px;
+}
+.contactForm .inputBox input ,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 3px 0;
+    font-size: 16px;
+    margin: 7px 0;
+    border: none;
+    border-bottom: 2px solid #5156be;
+    outline: none;
+}
+@media screen and (max-width: 980px) {
+    .contact .content{
+        max-width: 600px;
+    }
+    .contact{
+        padding:20px 20px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .contactForm{
+        width: 90%;
+        padding:10px;
+    }
+    .contact *{
+        font-size:14px;
+    }
+    
+}

@@ -1,0 +1,29 @@
+.box{
+    background-color: white;
+    position: absolute;
+    /* right: 320px; */
+    transform: translateY(120px);
+    padding: 10px;
+    width: 180px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    top: 150px;
+    z-index: 100;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.option input{
+    margin-right: 10px;
+}
+
+
+@media screen and (max-width:768px) {
+    .box{
+        top: 230px
+    }
+}

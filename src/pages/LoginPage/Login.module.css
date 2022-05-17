@@ -1,0 +1,153 @@
+.body {
+  padding-top: 80px;
+  background-image: url("https://cutewallpaper.org/21/professional-website-background/professional-images-for-website-background-13-Ride-Now-Pte-Ltd.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: "Open Sans", sans-serif;
+  color: #333333;
+  min-height: 100vh;
+}
+
+.box-form {
+  margin: 70px auto;
+  height: 90%;
+  width: 80%;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  box-shadow: 0 0 20px 6px #090b6f85;
+}
+
+.overlay span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-form .left .overlay {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background: white;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 2px solid #5156be;
+  border-radius: 20px;
+}
+.box-form .left .overlay img {
+  width: 500px;
+  height: 200px;
+}
+.box-form .left .overlay span a {
+  background: #5156be;
+  color: #ffffff;
+  margin-top: 10px;
+  padding: 16px 18px;
+  border-radius: 100px;
+  display: inline-block;
+  box-shadow: 0 3px 6px 1px #042d4657;
+  margin-left: 20px;
+}
+
+.box-form .right {
+  padding: 40px 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+}
+
+.signup {
+  font-size: 2vmax;
+  line-height: 0;
+  padding: 30px;
+}
+
+.box-form .right p {
+  font-size: 14px;
+  color: #b0b3b9;
+  padding: 30px;
+}
+.box-form .right .inputs {
+  overflow: hidden;
+}
+.box-form .right input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 25px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #b0b3b9;
+}
+.box-form .right .remember-me--forget-password {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box-form .right .remember-me--forget-password input {
+  margin: 0;
+  margin-right: 7px;
+  width: auto;
+}
+.box-form .right button {
+  float: right;
+  color: white;
+  background-color: #5156be;
+  font-size: 16px;
+  padding: 12px 35px;
+  border-radius: 50px;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.box-form button:hover {
+  color: #5156be;
+  background-color: white;
+  box-shadow: 0px 4px 20px 0px #5156be;
+  border: 2px solid #5156be;
+}
+
+@media screen and (max-width: 980px) {
+  .box-form{
+    padding: 10px 25px;
+  }
+
+  .box-form .right {
+    width: 100%;
+  }
+  .box-form {
+    flex-flow: wrap;
+    text-align: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .box-form .left .overlay img {
+    width: 300px;
+    height: 120px;
+  }
+  .box-form p {
+    font-size: 12px;
+  }
+  .box-form .right button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+  .box-form .left .overlay span a {
+    padding: 10px 12px;
+  }
+  .signup {
+    font-size: 1.9vmax;
+  }
+  .body label span.text-checkbox {
+    font-size: 12px;
+  }
+}

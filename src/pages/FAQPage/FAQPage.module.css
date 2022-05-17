@@ -1,0 +1,93 @@
+
+
+.page{
+    margin-top: 80px;
+    padding: 8% 3%;
+
+}
+
+.title{
+    font-size: 4rem;
+    margin-left: 18%;
+}
+
+.firstRow{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.firstRow div{
+    padding: 10px 100px;
+}
+
+.firstRow svg, .secondRow svg{
+    transform: scale(3);
+    color: #5156be;
+    margin-bottom: 30px;
+}
+
+
+.secondRow h1,.firstRow h1{
+    color: #3b3e68;
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.secondRow{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.more{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 0 10%;
+}
+
+.faqSection{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 980px) {
+    .page {
+      padding: 4% 1%;
+    }
+    .title {
+      font-size: 1.5rem;
+      margin-left: 8%;
+    }
+    .firstRow {
+      display: flex;
+      flex-direction: column;
+    }
+    .firstRow div {
+      padding: 8px 10px;
+    }
+    
+    .firstRow h2,
+    .secondRow h2 {
+      font-size: 1rem;
+    }
+    .secondRow h1,
+    .firstRow h1{
+      font-size: 1.4rem;
+    }
+    .more {
+      font-size: 1rem;
+    }
+  }

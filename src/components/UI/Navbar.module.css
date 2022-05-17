@@ -1,0 +1,108 @@
+.Container {
+  height: 80px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
+} 
+
+.Container a{
+  color: black;
+  display: inline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.Wrapper {
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.Left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.Left img{
+  margin: 0 10px 0 0;
+  height: 100%;
+  width: 200px;
+  transform: translateY(-100px);
+}
+
+.SearchContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+}
+
+.SearchContainer input{
+  height: 30px;
+  width: 200px;
+  margin-right: 30px;
+}
+
+.Input {
+  border: none;
+}
+
+.Right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.Right svg{
+  transform: scale(1.2);
+}
+
+.MenuItem {
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin: 0 5px 0 0;
+
+}
+.MenuItem:hover {
+  color: #5156be;
+  font-weight: bold;
+}
+
+
+.Icon {
+  margin: 0 9px 0 3px;
+}
+
+.Icon svg{
+  margin-left: 5px;
+}
+
+.credits{
+  display: flex;
+  flex-direction: row;
+}
+
+.credits p{
+  margin: 0;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.credits svg{
+  color:#5156be;
+  position: relative;
+  top: -2px;
+}

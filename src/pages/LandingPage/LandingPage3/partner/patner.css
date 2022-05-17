@@ -1,0 +1,8 @@
+.brand-logo {
+  opacity: 0.4;
+}
+
+.brand-logo:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}

@@ -1,0 +1,31 @@
+.Container {
+  background-color: #FAF9F6;
+  display:flex;
+  flex-direction:column;
+  height: 280px;
+  width: 200px;
+  position: relative;
+  float: right;
+  border: 3px solid #5156be;
+  border-radius:8px;
+  align-items: center;
+
+}
+.Items {
+  color: #5156be;
+  height: 20px;
+  width: 160px;
+  border: 1px solid black;
+  align-items: center;
+  font-size: 14px;
+  padding: 10px 10px;
+  border-radius:15px;
+  margin-bottom:10px;
+  justify-content:space-between;
+  
+
+}
+.Items:hover {
+    background-color: #5156be;;
+    color: white;
+}

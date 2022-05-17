@@ -1,0 +1,111 @@
+.selectBox{
+    position: relative;
+    font-size: 1rem;
+    width: 100%;
+    /* margin-left: 10px; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    user-select: none;
+    margin-bottom: 8px;
+    z-index: 400;
+    background-color: #fff;
+}
+.selectBox h3{
+    margin-top: 30px;
+    margin-bottom: 5px;
+
+    display: inline-block;
+}
+
+.selectBtn{
+    background: rgb(240,248,255,0.3);
+    border-radius: 5px;
+    color: grey;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 13px 0 13px 30px;
+    font-weight:bold;
+    cursor: pointer;
+    width: 90%;
+    z-index: -1;
+}
+
+.selectOpt label{
+    font-size: 1rem;
+}
+
+
+.selectMenu{
+    position: relative;
+    top: 103%;
+    left: 5%;
+    padding: 10px 15px;
+    background-color: white;
+    box-shadow: 3px 3px 10px 6px rgba(0,0,0,0.2);
+    color: grey;
+    width: 85%;
+    cursor: pointer;
+    /* transition: all 0.2s; */
+    z-index: 500;
+    opacity: 1;
+
+}
+
+.searchBox{
+    padding-left: 10px;
+    background-color: white;
+    /* z-index: 400; */
+}
+
+.searchBox input{
+    border: none;
+    width: 60%;
+    height: 40px;
+    font-size: 1rem;
+    z-index: 200;
+    
+}
+.searchBox svg{
+    transform: scale(1) translateY(5px);
+    color: #5156be;
+    opacity: 0.5;
+}
+
+.searchBox input:focus{
+    outline: none;
+    border: none;
+}
+
+.selectOpt{
+    z-index: 400;
+    max-height:400px;
+    overflow:'scroll';
+    background-color: white;
+    padding: 5px;
+}
+
+.selectOpt:hover{
+    background-color: #f4f4f4;
+    color: black;
+}
+
+
+.selectOpt input{
+    z-index: 300;
+    width: 10%;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+
+.selectOpt input:checked{
+    background-color: #5156be;
+}
+
+
+@media screen and (max-width:768px) {
+    .selectBtn{
+        padding: 10px 10px;
+    }
+}

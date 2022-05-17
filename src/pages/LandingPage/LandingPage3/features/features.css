@@ -1,0 +1,21 @@
+.feature-title {
+  font-family: "poppins", sans-serif;
+  font-size: 2.5rem;
+}
+.feature-description {
+  font-family: "montserrat", sans-serif;
+  font-size: 1rem;
+}
+.feature-icon-title {
+  font-family: "poppins", sans-serif;
+  font-size: 1.2rem;
+}
+.feature-icon-description {
+  font-family: "montserrat", sans-serif;
+  font-size: 1rem;
+}
+.feature-hover:hover {
+  background-color: #347bee;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}

@@ -1,0 +1,6 @@
+.box{
+    position: absolute;
+    background-color: white;
+    width: 15%;
+    /* transform: translateX(-100px) translateY(60px); */
+}

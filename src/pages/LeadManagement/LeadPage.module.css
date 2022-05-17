@@ -1,0 +1,193 @@
+.page{
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 180px;
+}
+
+.header hr{
+    margin: 0;
+}
+
+.options{
+    padding: 10px 50px 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   justify-content: left;
+   flex-wrap: wrap;
+}
+
+.options select{
+    font-size: 1rem;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.priority{
+    display: flex;
+    flex-direction: column;
+}
+
+.priority p{
+    font-size: 0.8rem;
+    margin: 0;
+    margin-left: 20%;
+    color: #5156be;
+    font-weight: bold;
+}
+.options button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 10px;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 10px;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid #5156be;
+}
+
+.options button svg{
+    color: #5156be;
+    transform: scale(0.8);
+    margin: 0 5px;
+}
+
+
+
+.column{
+   margin-left: 100px;
+}
+
+.page table{
+    margin-left: 0%;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.filterMain , .filterMobile{
+    width: 20%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+
+.filterMobile{
+    display: none;
+}
+
+.right{
+    margin-left: 20%;
+}
+
+.table{
+    width: 70vw;
+    overflow-x: scroll;
+    max-height: 75vh;
+    overflow-y: scroll;
+}
+
+.thead{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+
+
+
+.thead th{
+    padding: 10px 15px;
+}
+
+.thead th span{
+    display: inline;
+    padding: 0 !important;
+    font-weight: normal;
+    text-align: left;
+}
+
+.tableHead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tableHead button{
+    border: none;
+    background-color: inherit;
+}
+
+.thead th svg{
+    position: relative;
+    top:100%;
+}
+
+.mobileFilter{
+    display: none;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+.mobileFilter button{
+    background-color: #5156be;
+    padding: 16px 20px;
+    color: white;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.mobileFilter button svg{
+    transform: scale(2);
+}
+
+@media  screen and (max-width:768px) {
+    .page{
+        padding: 60px 20px;
+    }
+
+    .right{
+        margin-left: 0;
+    }
+
+    .filterMain{
+        display: none;
+    }
+
+    .mobileFilter{
+        display: inline;
+    }
+
+    .filterMobile{
+        display: block;
+        height: 100vh;
+    }
+
+    .options{
+        padding: 0;
+    }
+
+    .options button{
+        margin: 0 2px;
+    }
+
+    .table{
+        margin-top: 20px;
+        width: 90vw;
+    }
+    .thead th{
+        padding: 5px 3px;
+    }
+
+    .header h1{
+        font-size: 2.3rem;
+    }
+}

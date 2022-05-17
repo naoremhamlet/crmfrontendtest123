@@ -1,0 +1,38 @@
+.blog-title {
+  font-family: "poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.blog-description {
+  font-family: "montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.blog-bg:hover {
+  background-color: #3f72ca;
+  opacity: 1;
+  transition: background-color 0.2s ease-in-out;
+  color: #fff;
+}
+
+.blog-bg:hover > .blog-para-2 {
+  margin-top: -100px;
+}
+
+@media (max-width: 540px) {
+  .blog-title {
+    font-size: 2rem;
+  }
+  .blog-description {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 420px) {
+  .blog-title {
+    font-size: 1.5rem;
+  }
+  .blog-description {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,91 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 50px 50px 40px;
+    width: 300px;
+    margin: 50px 40px;
+    border-top: 20px solid #5156be;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .selected {
+    padding: 15px 25px;
+    background-color: #5156be;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1.2rem;
+    position: absolute;
+    top: -6%;
+    z-index: -1;
+  }
+  
+  .cardSel {
+    outline: 3px solid #5156be;
+  }
+  
+  .card h2 {
+    margin: 0;
+  }
+  .card strong svg {
+    position: relative;
+    top: 5px;
+    color: #5156be;
+    margin-right: 5px;
+  }
+  
+  .card p {
+    color: gray;
+    margin: 5px 0;
+  }
+  
+  .card h5 {
+    font-size: 1.2rem;
+  }
+  
+  .card hr {
+    width: 100%;
+    color: grey;
+    opacity: 0.5;
+    margin-top: 30px;
+    margin-bottom: 8px;
+  }
+  
+  .features ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: left;
+  }
+  
+  .features li {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .features svg {
+    margin: 0 10px;
+    color: #5156be;
+  }
+  @media screen and (max-width: 980px) {
+    .selected {
+      font-size: 1rem;
+      top: -8%;
+      padding: 7px 15px;
+    }
+    .card{
+      padding: 20px 30px 20px;
+    }
+    .card h5 {
+      font-size: 1rem;
+    }
+  }
+  

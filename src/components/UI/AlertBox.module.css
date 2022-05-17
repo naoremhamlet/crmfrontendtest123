@@ -1,0 +1,13 @@
+.box{
+    width: 200px;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 500;
+}
+
+.box p:hover{
+    color:black;
+}

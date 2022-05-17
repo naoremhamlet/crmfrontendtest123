@@ -1,0 +1,108 @@
+.Box {
+  /* overflow-x: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  width:100%;
+  height: 180px;
+  padding: 10px 0;
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  border-top: 4px solid #5156be;
+  /* border-radius: 20px 0px; */
+  margin:0;
+}
+
+.Container {
+  /* overflow-x: hidden; */
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap:wrap;
+
+  align-items: center;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+}
+
+.Column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: flex-start;
+  margin-left: 60px;
+  font-family: "Poppins", sans-serif;
+  margin:0 20px;
+}
+
+.Row {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  margin:0;
+  width:100%;
+  flex-direction: row;
+  justify-content:space-around;
+  flex-wrap:wrap;
+
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.FooterLink {
+  /* color: black; */
+  cursor:pointer;
+  color:'white';
+  /* margin-bottom: 10px; */
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+.FooterLink:hover {
+  /* color: #5156be; */
+
+  color:white;
+  font-size:20px;
+  transition: 200ms ease-in;
+}
+
+.Heading {
+  cursor:pointer;
+  font-size: 20px;
+  /* color: #5156be; */
+  color:white;
+  border-bottom:4px solid white;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+}
+
+
+@media screen and (max-width: 980px){
+  .Box {
+    height: auto;
+    font-size: 0.5rem;
+  }
+  /* .Row{
+    flex-direction: column;
+    margin-bottom: 20px;                          
+  } */
+  .Heading {
+    margin-bottom: 15px;
+  }
+  .Column{
+    margin:5px 5px;
+  }
+
+  .FooterLink{
+    font-size: 0.7rem;
+  }
+}

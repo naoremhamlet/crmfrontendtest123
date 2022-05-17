@@ -1,0 +1,26 @@
+.nav-link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-align: bottom;
+}
+
+@media (max-width: 576px) {
+  .nav-logo {
+    max-height: 50px;
+  }
+  .left-div {
+    display: none;
+  }
+  .home-img {
+    width: 100%;
+    margin-left: -1rem;
+    margin-top: 8rem !important;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .overlay-link {
+    padding: 0px;
+  }
+}

@@ -1,0 +1,44 @@
+.process-title {
+  font-family: "poppins", sans-serif;
+  font-size: 2.5rem;
+}
+.process-description {
+  font-family: "montserrat", sans-serif;
+  font-size: 1rem;
+}
+.logo-container:hover {
+  cursor: pointer;
+  background-color: #3d81ee;
+  transition: background-color 0.3s ease-in-out;
+  color: #fff;
+}
+
+@media (max-width: 566px) {
+  .left-text {
+    text-align: left;
+  }
+}
+@media (min-width: 566px) {
+  .left-container {
+    flex-direction: row-reverse;
+  }
+  .left-text {
+    text-align: right;
+  }
+}
+@media (max-width: 768px) {
+  .process-title {
+    font-size: 2rem;
+  }
+  .process-description {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 420px) {
+  .process-title {
+    font-size: 0.8rem;
+  }
+  .container-text {
+    max-width: 70%;
+  }
+}

@@ -1,0 +1,185 @@
+
+.body{
+    margin: 8% 8% 3% 8%;
+    margin-top: 50px;
+}
+
+.heading{
+    padding: 0 2% ;
+}
+.links{
+    margin: 2% 0;
+
+}
+
+
+.links hr{
+    margin-bottom: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.filterMain{
+    width: 20%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+}
+
+.rightSec{
+    margin-left: 15%;
+}
+
+.rightSec .table{
+    width: 80vw;
+    overflow-x: scroll;
+    max-height: 75vh;
+    overflow-y: scroll;
+}
+
+.links hr{
+    margin: 0;
+    height: 5px;
+    background-color: rgba(184, 184, 184, 0.2);
+    border: none;
+
+}
+
+.links span{
+    font-size: 2rem;
+    padding: 0 20px ;
+    margin-bottom: 20px;
+}
+
+.links svg{
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.links h6{
+    margin: 0;
+    display: inline-block;
+    cursor: pointer;
+    color: gray;
+
+}
+
+
+.activeLink{
+    color: #5156be;
+    border-bottom: #5156be 5px solid;
+}
+
+.activeLink h6{
+    color: #5156be;
+}
+
+
+.filterSection{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filterSection button{
+    height: 80%;
+    padding: 10px 15px;
+    background: inherit;
+    border: none;
+    color: gray;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+}
+
+.activeFil svg{
+    color:#5156be;
+}
+
+.left svg{
+    margin: 0;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 200px;
+}
+.right button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterBox{
+    position: relative;
+}
+
+
+.mobileFilter{
+    display: none;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+.mobileFilter button{
+    background-color: #5156be;
+    padding: 16px 20px;
+    color: white;
+    border: none;
+    border-radius: 0 10px 10px 0;
+}
+
+.mobileFilter button svg{
+    transform: scale(2);
+}
+
+
+@media  screen and (max-width: 768px) {
+
+    .rightSec{
+        margin-left: 0;
+    }
+
+
+    .filterMain{
+        display: none;
+    }
+
+    .mobileFilter{
+        display: inline;
+    }
+
+    
+    .filterMobile{
+        display: block;
+        height: 100vh;
+    }
+
+    .links span{
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1.2rem;
+        margin: 0 5px;
+    }
+
+    .links svg{
+        transform: scale(1);
+    }
+}

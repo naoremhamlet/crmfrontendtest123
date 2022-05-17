@@ -1,0 +1,190 @@
+.body{
+    margin-top: 80px;
+    padding: 150px 100px 200px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.body h1{
+    font-size: 3rem;
+}
+
+.selector{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight:normal;
+}
+
+.selector h3{
+    cursor: pointer;
+    font-weight: normal;
+    padding: 10px 15px;
+    margin: 10px;
+}
+
+.selected{
+    color: #5156be;
+    border-bottom: 2px solid #5156be;
+
+}
+
+.selectPlan{
+    margin-top: 40px;
+    align-self: flex-start;
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selectHr{
+    width: 90%;
+    color: gray;
+    margin-top: 0;
+}
+
+.selectPlan h2, .selectPlan p{
+    margin: 15px 100px;
+}
+
+
+
+.cards{
+    margin-top: 60px;
+    display: flex;
+}
+
+
+
+.checkout{
+    width: 100vw;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.left{
+    
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.left h3{
+    color: gray;
+    margin-bottom: 0;
+}
+
+.left h1{
+    margin-top: 10px;
+    font-size: 2.6rem;
+}
+
+
+.right{
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+
+.right button{
+    margin-left: 80px;
+    padding: 12px 40px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #5156be;
+    color: white;
+    cursor: pointer;
+}
+
+.right button:hover{
+    color:#5156be;
+    background-color: inherit;
+    border: 2px solid #5156be;
+}
+
+.right button:disabled{
+    background-color: rgb(182, 178, 178);
+    color:rgb(83, 81, 81);
+    border: 2px solid rgb(189, 189, 189);
+    cursor: not-allowed;
+    
+}
+
+.checkPrice{
+    display: inline;
+    color: #272d99;
+}
+@media screen and (max-width: 980px){
+    .body h1{
+        font-size: 1.5rem;
+    }
+    .body{
+        padding: 50px 15px 50px 15px;
+    }
+    .selector{
+        font-size: 1rem;
+    }
+    .selectPlan{
+        font-size: 0.8rem;
+        justify-content: space-around;
+    }
+    .selectPlan p{
+        font-size: 0.9rem;
+    }
+    
+    .selectPlan h2, .selectPlan p{
+        margin: 7px 20px;
+    }
+    .cards{
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .left{
+        margin-left: 20px;
+    }
+
+    .right{
+        margin-right: 20px;
+    }
+
+    .checkout{
+        font-size: 0.8rem;
+    }
+
+    .left h1{
+        font-size: 1.2rem;
+    }
+
+    .right h2{
+        font-size: 0.8rem;
+    }
+
+    .right button{
+        margin-left: 10px;
+    }
+    .loginFirst h1{
+        margin-left: 10px  !important;
+    }
+}

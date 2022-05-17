@@ -1,0 +1,20 @@
+.filterBox{
+    position: absolute;
+    left: 320%;
+    top: 750%;
+    transform: translate(-50%, -50%);
+    padding: 8px 80px 30px 30px;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* box-shadow: 0 0 20px 8px #d0d0d0; */
+    z-index: 50;
+    width: 400%;
+  }
+
+
+@media screen and (max-width:768px) {
+  .filterBox{
+    left: 0%;
+  }
+}

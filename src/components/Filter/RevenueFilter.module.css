@@ -1,0 +1,13 @@
+.box{
+    position: absolute;
+    background-color: white;
+    width: 15%;
+    left: 0;
+    /* transform: translateX(-100px) translateY(60px); */
+}
+
+@media  screen and (max-width: 768px) {
+    .box{
+        width: 60%;
+    }
+}

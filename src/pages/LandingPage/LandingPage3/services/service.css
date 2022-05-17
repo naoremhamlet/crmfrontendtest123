@@ -1,0 +1,26 @@
+.service-title {
+  font-size: 2.4rem;
+  font-weight: bold;
+  font-family: "poppins", sans-serif;
+}
+.service-description {
+  font-size: 1rem;
+  font-family: "montserrat", sans-serif;
+}
+.number-card:hover {
+  background-color: #2472ec;
+  box-shadow: 2px 0px 52px -8px rgba(36, 114, 236, 1);
+  color: #fff;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.service-img {
+  height: 60%;
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .service-img {
+    height: 500px;
+    width: 500px;
+  }
+}

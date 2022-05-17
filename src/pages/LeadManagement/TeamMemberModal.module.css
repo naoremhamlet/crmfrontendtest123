@@ -1,0 +1,66 @@
+.backdrop{
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,0.5);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.box{
+    width: 600px;
+    background-color: white;
+    padding: 20px 30px 20px 40px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leads{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.lead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lead svg{
+    color:#5156be;
+    cursor: pointer;
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.head svg{
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:768px) {
+    .box{
+        width: 300px;
+    }
+
+    .box p{
+        margin: 0;
+    }
+
+    .lead{
+        flex-wrap: wrap;
+    }
+}

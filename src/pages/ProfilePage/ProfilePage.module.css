@@ -1,0 +1,220 @@
+.modalBackground {
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,0.8);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    left: 0;
+  }
+
+.box{
+    width: 80%;
+    height: 85%;
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    background-color: #F4F5FF;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 5px 20px 10px 25px;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+.heading{
+    padding-top: 10px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+}
+
+.pfp{
+    outline: 2px solid #5156be;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.pfp h2, .pfp h3{
+    margin: 5px 0;
+}
+
+.pfp h3{
+    font-weight: normal;
+}
+
+
+.links{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+}
+
+.links button{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    margin: 15px 10px;
+    background-color: #5156be;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.links button:hover{
+    background-color: white;
+    color:#5156be;
+    border: 2px solid #5156be;
+}
+
+.pfp img{
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px 0;
+}
+
+.panel h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 15px 23px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.activePan{
+    color:#5156be;
+    font-weight: bold !important;
+}
+
+
+.right{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 10px;
+    background-color: white;
+    width: 64%;
+    padding: 10px 15px 10px 20px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+
+.right h3{
+    margin: 0;
+}
+
+.info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.insights{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-top: 40px;
+}
+
+.insights h4{
+    display: inline;
+    font-weight: normal;
+}
+
+.insights svg{
+    transform: rotate(-20deg);
+    margin-right: 5px;
+    position: relative;
+    top: 5px;
+    color: #5156be;
+}
+
+.inLink{
+    padding: 10px 8px;
+    border-radius: 10px;
+    margin: 15px 0;
+    background-color: rgb(207, 206, 206,0.4);
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .box{
+        left: 4%;
+    }
+
+    .layout{
+        flex-wrap: wrap;
+    }
+    .panel{
+        flex-direction: row;
+        justify-content: left   ;
+        align-items: center;
+        text-align: center;
+    }   
+
+    .panel h2{
+        margin: 8px 5px 0px 5px;
+        display: inline;
+        padding: 10px 0px;
+        font-size: 1.15rem;
+
+    }
+
+    .activePan{
+        border-bottom: 3px solid #5156be;
+    }
+
+    .right {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        flex-direction: column;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .insights{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 0;
+    }
+
+    .insights h2{
+        display: block;
+    }
+
+    .inLink{
+        margin: 5px 0;
+        width: auto;
+    }
+}
